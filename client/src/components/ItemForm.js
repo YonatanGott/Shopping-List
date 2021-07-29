@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
+        width: '100%',
         marginTop: theme.spacing(3),
     },
     submit: {
@@ -34,7 +34,6 @@ const ItemForm = ({ handleHideModal, name, notes, action, getItems, id }) => {
     const [itemName, setItemName] = useState(name)
     const [itemNote, setItemNote] = useState(notes)
     const [error, setError] = useState(null)
-
 
     const handleSubmit = async (e) => {
         e.preventDefault();

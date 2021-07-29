@@ -15,7 +15,6 @@ const useStyles = makeStyles(() => ({
 const Layout = () => {
     const classes = useStyles();
 
-
     return (
         <Container className={classes.container}>
             <Typography className={classes.title} variant="h2">

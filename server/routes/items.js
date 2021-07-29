@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const ListItem = require('../models/list-item')
 const {
     getItems,
     createItem,
