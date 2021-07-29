@@ -1,8 +1,8 @@
 # Shopping-List
 
-To install and run :  
-'cd server' and then 'node index'  
-'cd client' and then 'npm start'  
+To install and run from main dir:  
+'cd server' then 'npm install' and then 'node index'  
+'cd client' then 'npm install' and then 'npm start'  
 
 MongoDB should be installed locally.  
 
