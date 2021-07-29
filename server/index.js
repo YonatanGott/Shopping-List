@@ -15,8 +15,14 @@ app.use(express.json());
 
 //MongoDB
 const mongoose = require('mongoose');
-// Docker: replace 'localhost' with 'host.docker.internal'
-mongoose.connect('mongodb://localhost/shopping',
+// For Docker: replace 'localhost' with 'mongo:27017' to connect to mongoDB Image or 'host.docker.internal' to connect to local mongoDB
+
+// Use These variables to change DB connection type
+const mongoConnectDockerImage = "mongo:27017"
+// const mongoConnectLocalDB = "localhost"
+//const mongoConnectDockerLocalDB = "host.docker.internal"
+
+mongoose.connect(`mongodb://${mongoConnectDockerImage}/shopping`,
     { useNewUrlParser: true, useUnifiedTopology: true },
     () => console.log('connected to mongoDB'));
 const db = mongoose.connection;
